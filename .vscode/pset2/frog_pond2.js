@@ -7,10 +7,8 @@ Create a program that takes a number index from user input, and prints out the a
     If the user inputs 4, it should “wrap back” to 0, and print activies [0] or “babysit tadpoles”.
 */
 
-let userInput = prompt("Enter a number index (0, 1, 2, or 4):");
 const activities = ["babysit tadpoles", "flies for lunch", "tongue stretch", "swimming lesson"];	
-let userInput0 = "babysit tadpoles";
-let userInput1 = "flies for lunch";
-let userInput2 = "tongue stretch";
-let userInput4 = "babysit tadpoles";
-print(activities[userInput]);
+
+let index = prompt("What's your activity index?");
+index = index % 4;
+print(activities[index])
